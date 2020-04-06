@@ -2,26 +2,28 @@
 -------------------------
 ## Child
 
-nav>ul>li
+```nav>ul>li
 <nav>
     <ul>
         <li></li>
     </ul>
 </nav>
+```
 
 --------------------------
 ## Sibling
 
-div+p+bq
+```div+p+bq
 <div></div>
 <p></p>
 <blockquote></blockquote>
+```
 
 ---------------------------
 ## Climb up
 
-div+div>p>span+em^bq
-<div></div>
+### div+div>p>span+em^bq
+```<div></div>
 <div>
     <p><span></span><em></em></p>
     <blockquote></blockquote>
@@ -34,13 +36,14 @@ div+div>p>span+em^^bq
     <p><span></span><em></em></p>
 </div>
 <blockquote></blockquote>
+```
 
 -------------------------------
 
 ## Grouping
 
-div>(header>ul>li*2>a)+footer>p
-<div>
+### div>(header>ul>li*2>a)+footer>p
+```<div>
     <header>
         <ul>
             <li><a href=""></a></li>
@@ -66,26 +69,28 @@ div>(header>ul>li*2>a)+footer>p
 <footer>
     <p></p>
 </footer>
+```
 
 ---------------------------------
 
 ## Multiplication
 
-ul>li*5
-<ul>
+### ul>li*5
+```<ul>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
 </ul
+```
 
 -----------------------------------
 
 ## Item Numbering
 
-ul>li.item$*5
-<ul>
+### ul>li.item$*5
+```<ul>
     <li class="item1"></li>
     <li class="item2"></li>
     <li class="item3"></li>
@@ -124,12 +129,13 @@ ul>li.item$@3*5
     <li class="item6"></li>
     <li class="item7"></li>
 </ul>
+```
 
 -----------------------------------
 
 ## ID class and Attributes
 
-#header
+```#header
 <div id="header"></div>
 
 .title
@@ -140,12 +146,13 @@ form#search.wide
 
 p.class1.class2.class3
 <p class="class1 class2 class3"></p>
+```
 
 -------------------------------------
 
 ## Custom Attributes
 
-p[title="Hello world"]
+```p[title="Hello world"]
 <p title="Hello world"></p>
 
 td[rowspan=2 colspan=3 title]
@@ -153,22 +160,24 @@ td[rowspan=2 colspan=3 title]
 
 [a='value1' b="value2"]
 <div a="value1" b="value2"></div
+```
 
 ---------------------------------------
 
 ## Text
 
-a{Click me}
+```a{Click me}
 <a href="">Click me</a>
 
 p>{Click }+a{here}+{ to continue}
 <p>Click <a href="">here</a> to continue</p>
+```
 
 ----------------------------------------
 
 ## Implicit Tag Names
 
-.class
+```.class
 <div class="class"></div>
 
 em>.class
@@ -185,3 +194,4 @@ table>.row>.col
         <td class="col"></td>
     </tr>
 </table>
+```
